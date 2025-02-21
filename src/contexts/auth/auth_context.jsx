@@ -10,7 +10,7 @@ export default function AuthProvider({ children }) {
   const login = async (formData) => {
       let res = await axios({
         method: 'POST',
-        url: 'https://jwtbackendcomplete.onrender.com/api/auth',
+        url: 'https://jwtbackendcomplete-1.onrender.com/api/auth',
         data: formData,
       });
 
@@ -21,7 +21,7 @@ export default function AuthProvider({ children }) {
     try {
       let res = await axios({
         method: 'POST',
-        url: 'https://jwtbackendcomplete.onrender.com/api/users',
+        url: 'https://jwtbackendcomplete-1.onrender.com/api/users',
         data: formData,
       });
 
